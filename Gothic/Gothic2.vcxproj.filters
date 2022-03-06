@@ -1,0 +1,1644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Andre">
+      <UniqueIdentifier>{c8804238-9073-4cec-a08c-8123c4af1d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andre\Game">
+      <UniqueIdentifier>{5c957e04-dfa2-44c7-973a-2aabc5494611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Andre\Engine">
+      <UniqueIdentifier>{42d5ccae-9949-459c-9166-0842bf5325aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bert">
+      <UniqueIdentifier>{93bc8ff1-7832-4be1-a2f1-b254985677d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bert\Game Nr. 1">
+      <UniqueIdentifier>{b2040ad4-20a9-4d0b-a5d6-499ccd2bc3f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bert\Engine Nr. 1">
+      <UniqueIdentifier>{544b6fe7-fae4-451d-940d-23a05fc478f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Carsten">
+      <UniqueIdentifier>{9470887b-f342-4c14-9fe0-32a7086a138b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Carsten\Game Nr. 2">
+      <UniqueIdentifier>{d1be8b4c-8a46-4b11-833c-0d013d233a75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Carsten\Engine Nr. 2">
+      <UniqueIdentifier>{c6e53b2e-9dd9-4557-87fa-19fd7f46aaae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dieter">
+      <UniqueIdentifier>{18ada372-564e-470f-9630-ec5f968ebd90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dieter\Engine Nr. 3">
+      <UniqueIdentifier>{22c6232c-5afb-4c31-ab66-72995034f703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kurt">
+      <UniqueIdentifier>{c92cf779-5b00-48fc-b287-f16e98f4f0b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kurt\Game Nr. 4">
+      <UniqueIdentifier>{21dca2ea-25fc-411d-b03b-487b3b7d510a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kurt\Engine Nr. 4">
+      <UniqueIdentifier>{1fa3a6d9-06e2-4749-94d6-c7e80a7d57e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manuel">
+      <UniqueIdentifier>{426255d0-68a0-4e87-9949-73b5668087a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manuel\Game Nr. 5">
+      <UniqueIdentifier>{967240c8-eba3-47a7-b32b-fba2335b2ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manuel\Engine Nr. 5">
+      <UniqueIdentifier>{5f833351-5b5e-451b-a86e-59ddf3c697fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Roman">
+      <UniqueIdentifier>{ec0bebcc-9c3d-4f3d-adf5-7d0289716ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Roman\Game Nr. 6">
+      <UniqueIdentifier>{571d1d21-7fbe-4ae3-9352-64017952f5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Roman\Engine Nr. 6">
+      <UniqueIdentifier>{34fa4f52-e451-4d0a-b803-369291e5a33b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ulf">
+      <UniqueIdentifier>{ecb2d482-6a99-4385-9b22-9c4c12f91906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ulf\Game Nr. 7">
+      <UniqueIdentifier>{7818c022-2483-4072-9b1a-b814775de9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ulf\Engine Nr. 7">
+      <UniqueIdentifier>{87cfc9c8-3d6a-458c-b2e0-0dbda5f0413a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{08007fda-4e4d-4f05-b2df-9f15e1a492b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Header">
+      <UniqueIdentifier>{31614c63-3a12-48dc-91da-5af232d42b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{c2b0b8d8-4f21-4a20-a44b-86e802407006}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_andre\oCsManager.cpp">
+      <Filter>Andre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="_andre\oCsPlayer.cpp">
+      <Filter>Andre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="_andre\oCsProps.cpp">
+      <Filter>Andre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="_andre\oCsTrigger.cpp">
+      <Filter>Andre\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsContext.cpp">
+      <Filter>Andre\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsCutscene.cpp">
+      <Filter>Andre\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsLib.cpp">
+      <Filter>Andre\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsManager.cpp">
+      <Filter>Andre\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsPlayer.cpp">
+      <Filter>Andre\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsPool.cpp">
+      <Filter>Andre\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsProps.cpp">
+      <Filter>Andre\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oBinkPlayer.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oGameInfo.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oGameManager.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oMenu_Tools.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oMenuSavegame.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\ooBert.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oPlayerInfo.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oSaveGame.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oSysInfo.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oTrigger.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oViewProgressbar.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_bert\oViewStatusbar.cpp">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zBinkPlayer.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zBuffer.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zDisk.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zDisk_Vdfs.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zError.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zFileCsv.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zGameInfo.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNet.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNet_Win32.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetEventMan.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetHost.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetManager.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetMessage.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetSession.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetTypes.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetVersion.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetVobControl.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zOption.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zPlayerGroup.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zPlayerInfo.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zScanDir.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zString.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zSysInfo.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zVideoPlayer.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zViewProgressbar.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zViewStatusbar.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zWorldInfo.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zzBert.cpp">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oAiHuman_Magic.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oMagFrontier.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oMagic.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oMenu_Main.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oMenu_Status.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\ooCarsten.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oSpell.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oVisFx.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oVisFx_Edit.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="_carsten\oVisFx_MultiTarget.cpp">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Core.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Dialog.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Movement.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Util.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zCsCamera.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zDbgTools.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zExceptionHandler.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zFlash.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zInput.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zInput_Win32.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zKbSplines.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMathTools.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMenu.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMenu_Item.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMusic.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMusic_Dm.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zSndMss.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zVideo_Win32.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zViews.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zWin32.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zzCarsten.cpp">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\z3D.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zAi.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zAiPlayer.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zAlgebra.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zArchiver.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zArchiver2.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zArchiverGeneric.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBsp.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBspBuild.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBspIndoor.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBVolume.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCamera.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionDetector.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObject.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObjectMisc.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObjectMiscChar.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zContainer.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zConvexCollision.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zDecal.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zEigen.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zEngine.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zFft.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zFile3D.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zFileQBsp.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zLensflare.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMaterial.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemory.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemory_Generic.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemory_Win32.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemPool.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMesh.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zModel.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zModelProto.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMorphMesh.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMoving.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zObject.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zParticle.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPhysics.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPluecker.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPolygon.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPolyPool.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPolyStrip.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPrime.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zProgMesh.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zProgMeshBuild.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zProgMeshProto.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zQuadMark.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRayCache.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRenderer.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRenderLightContainer.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRenderManager.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zResource.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSession.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSky.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSky_Outdoor.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSound.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSoundMan.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSparseArray.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTexFile.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTexture.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zThread.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTools.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTrigo.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTypes3D.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVertexBuffer.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVob.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVobLight.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVobMisc.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVobMove.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zWorld.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zWorldLight.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zzDieter.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zZone.cpp">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClCompile>
+    <ClCompile Include="_kurt\oMusicZone.cpp">
+      <Filter>Kurt\Game Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zMusicCtrl.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_DxtcCache.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Init.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Render.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_State.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_SurfaceCache.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Texture.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_VertexBuffer.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Vid.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zTexConvert.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zTexConvPalette.cpp">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClCompile>
+    <ClCompile Include="_manuel\oCollisionObjectMiscChar.cpp">
+      <Filter>Manuel\Game Nr. 5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_manuel\zAccount.cpp">
+      <Filter>Manuel\Engine Nr. 5</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oDamage.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oDocumentManager.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oInformationManager.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oLogManager.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oNpc_Damage.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oNpc_Fight.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oNpc_Move.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oViewDialogInventory.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oViewDialogItem.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oViewDialogItemContainer.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oViewDialogStealContainer.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oViewDialogTrade.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oViewDocument.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_roman\oViewDocumentMap.cpp">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewBase.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewDialog.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewDialogChoice.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewDraw.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewFx.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewObject.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewPrint.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewPrint_Font.cpp">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oAiHuman.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oAiShoot.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oAniCtrl.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oBarrier.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oDialog.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oDoc.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oFocus.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oGame.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oGameExternal.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oGameKeys.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oGuilds.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oHelp.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oInfo.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oInventory.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oItem.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oItemReact.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oMission.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oMobInter.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oNews.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oNpc.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oNpcInv.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oNpcMessages.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oNpcStates.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oObjFactory.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oParticleControl.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oPortals.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oRoutine.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oSpawn.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oSvm.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oText.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oVob.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oWaynet.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\oWorld.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="_ulf\Phoenix.cpp">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zConsole.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zEventMan.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zFonts.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zGrafix.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zParser.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zParser_Lexer.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zParser_Symbol.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zView.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zWaynet.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zzUlfi.cpp">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\zLocal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_andre\oCsManager.h">
+      <Filter>Andre\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="_andre\oCsPlayer.h">
+      <Filter>Andre\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="_andre\oCsProps.h">
+      <Filter>Andre\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="_andre\oCsTrigger.h">
+      <Filter>Andre\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_andre\zCCsContext.h">
+      <Filter>Andre\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_andre\zCCsCutscene.h">
+      <Filter>Andre\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_andre\zCCsLib.h">
+      <Filter>Andre\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_andre\zCCsManager.h">
+      <Filter>Andre\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_andre\zCCsPlayer.h">
+      <Filter>Andre\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_andre\zCCsPool.h">
+      <Filter>Andre\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_andre\zCCsProps.h">
+      <Filter>Andre\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oBinkPlayer.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oGameInfo.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oGameManager.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oMenu_Tools.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oMenuSavegame.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\ooBert.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oPlayerInfo.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oSaveGame.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oSysInfo.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oTrigger.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oViewProgressbar.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_bert\oViewStatusbar.h">
+      <Filter>Bert\Game Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zBinkPlayer.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zBuffer.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zDisk.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zDisk_Vdfs.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zError.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zFileCsv.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zGameInfo.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNet.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNet_Win32.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetEventMan.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetHost.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetManager.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetMessage.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetSession.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetTypes.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetVersion.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zNetVobControl.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zOption.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zPlayerGroup.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zPlayerInfo.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zQueue.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zScanDir.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zSpyTypes.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zString.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zSysInfo.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zVideoPlayer.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zViewProgressbar.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zViewStatusbar.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zWorldInfo.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_bert\zzBert.h">
+      <Filter>Bert\Engine Nr. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oMagFrontier.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oMagic.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oMenu_Main.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oMenu_Status.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\ooCarsten.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oSpell.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oVisFx.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oVisFx_Edit.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="_carsten\oVisFx_MultiTarget.h">
+      <Filter>Carsten\Game Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Core.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Dialog.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Movement.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Util.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zCpuSpecs.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zCsCamera.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zDbgTools.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zExceptionHandler.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zExHnd_Bugslayer.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zFlash.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zInput.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zInput_Const.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zInput_Win32.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zKbSplines.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zList2.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zMathTools.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zMenu.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zMenu_Item.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zMusic.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zMusic_Dm.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zOption_Const.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zSndMss.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zVideo_Win32.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zViews.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zWin32.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zWin32_Internal.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_carsten\zzCarsten.h">
+      <Filter>Carsten\Engine Nr. 2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\z3D.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zAi.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zAiPlayer.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zAlgebra.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zArchive2Container.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zArchiver.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zArchiver2.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zArchiverGeneric.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zBsp.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zBVolume.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionDetector.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionObject.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionObjectMisc.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zCompilerVcWin32.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zContainer.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zConvexCollision.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zCore.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zEigen.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zEngine.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zFft.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zFile3D.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zFixPnt.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zLensflare.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMaterial.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMemory.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Base.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Generic.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Win32.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMemPool.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zModel.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMorphMesh.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMoving.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zObject.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zParticle.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zPhysics.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zPluecker.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zPolyPool.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zPolyStrip.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zPrime.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zProgMesh.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zRayCache.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zRenderer.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zRenderLightContainer.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zRenderManager.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zResource.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zSession.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zSky.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zSky_Outdoor.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zSound.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zSoundMan.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zSparseArray.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zTexture.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zThread.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zTools.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zTrigo.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zTypes.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zTypes3D.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zVertexBuffer.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zVertexTransform.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zVisual.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zVob.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zVobMisc.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zWorld.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zzDieter.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zZone.h">
+      <Filter>Dieter\Engine Nr. 3</Filter>
+    </ClInclude>
+    <ClInclude Include="_kurt\oMusicZone.h">
+      <Filter>Kurt\Game Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zMusicCtrl.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_DxtcCache.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Init.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Render.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_State.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_SurfaceCache.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Texture.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_VertexBuffer.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Vid.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_kurt\zTexConvert.h">
+      <Filter>Kurt\Engine Nr. 4</Filter>
+    </ClInclude>
+    <ClInclude Include="_manuel\oCollisionObjectMiscChar.h">
+      <Filter>Manuel\Game Nr. 5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_manuel\zAccount.h">
+      <Filter>Manuel\Engine Nr. 5</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oDamage.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oDocumentManager.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oIncDialogs.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oIncViews.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oInformationManager.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oLogManager.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oNpc_Damage.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oNpc_Fight.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oNpc_Move.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oViewDialogInventory.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oViewDialogItem.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oViewDialogItemContainer.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oViewDialogStealContainer.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oViewDialogTrade.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oViewDocument.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_roman\oViewDocumentMap.h">
+      <Filter>Roman\Game Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zIncDialogs.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zIncViews.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewBase.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewDialog.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewDialogChoice.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewDraw.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewFx.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewObject.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewPrint.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_roman\zViewPrint_Font.h">
+      <Filter>Roman\Engine Nr. 6</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oAiHuman.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oAiShoot.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oAniCtrl.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oBarrier.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oDialog.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oDoc.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oFocus.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oGame.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oGuilds.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oHelp.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oInfo.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oInventory.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oItem.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oItemReact.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oMission.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oMobInter.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oNews.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oNpc.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oNpcMessages.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oNpcStates.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oObjFactory.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\ooUlfi.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oParticleControl.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oPortals.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oRoutine.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oSpawn.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oSvm.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oText.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oVob.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oWaynet.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="_ulf\oWorld.h">
+      <Filter>Ulf\Game Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zConsole.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zEventMan.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zFonts.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zGrafix.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zList.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zParser.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zParser_Const.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zParser_Symbol.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zView.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zWaynet.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_ulf\zzUlfi.h">
+      <Filter>Ulf\Engine Nr. 7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\BugSlayerUtil\inc\BaseTsd.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\BaseTsd.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bink\inc\Bink.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dx.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxCore.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxErr.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxMath.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxShapes.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxSprite.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\Dls1.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmDls.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmError.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmKsCtrl.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmPlugin.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\DMusBuff.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\DMusicC.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\DirectX\inc\DMusicI.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Miles\inc\Mss.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bink\inc\RadBase.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Bink\inc\RadMem.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\S3tc\inc\S3_Intrf.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\SmartHeap\inc\SmrtHeap.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\SmartHeap\inc\SmrtHeap.hpp">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libraries\Vdfs\inc\Vdfs32g.h">
+      <Filter>Libraries\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\res\zWin32_Resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\res\zWin32_Version.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\zLocal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\libraries\Bink\lib\BinkW32.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\BugSlayerUtil\lib\ImageHlp.Lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\BugSlayerUtil\lib\BugSlayerUtil.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\Miles\lib\Mss32.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\SmartHeap\lib\ShDW32Mt.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\DirectX\lib\DDraw.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\DirectX\lib\D3dx.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\DirectX\lib\DxGuid.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\S3tc\lib\S3tc.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\MallocWin32Debug\lib\MallocWin32Debug.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+    <Library Include="..\..\libraries\DirectX\lib\DInput.lib">
+      <Filter>Libraries</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\ZenGin\res\Gothic2.exe.manifest">
+      <Filter>Resources</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\ZenGin\res\Gothic2.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\ZenGin\res\Splash.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\ZenGin\res\zRes.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\libraries\DirectX\inc\D3dxMath.inl">
+      <Filter>Libraries\Header</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

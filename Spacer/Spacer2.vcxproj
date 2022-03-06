@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Goldmaster|Win32">
+      <Configuration>Goldmaster</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/release/Spacer", VKBAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{F8516463-F982-43CC-8DAD-FC129D2B29F2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">
+    <OutDir>.\goldmaster\</OutDir>
+    <IntDir>.\goldmaster\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug\</OutDir>
+    <IntDir>.\debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release\</OutDir>
+    <IntDir>.\release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\res\;.\_bert\;.\_carsten\;..\..\libraries\Miles\inc\;..\..\libraries\Vdfs\inc\;..\..\libraries\Glide\inc\;..\..\libraries\Bink\inc\;..\ZenGin\_kurt\;.\_andre\;..\ZenGin\res;..\ZenGin\_andre\;..\ZenGin\_bert\;..\ZenGin\_carsten\;..\ZenGin\_dieter\;..\ZenGin\_manuel\;..\Gothic\_manuel\;..\ZenGin\_ulf\;..\ZenGin\_roman\;..\Gothic\_andre\;..\Gothic\_bert\;..\Gothic\_roman\;..\Gothic\_carsten\;..\Gothic\_ulf\;..\Gothic\_kurt\;..\..\libraries\DirectX\inc\;..\..\libraries\BugslayerUtil\inc\;..\ZenGin\;..\..\libraries\cj60\inc\;..\..\libraries\S3tc\inc\;..\..\libraries\SecuROM\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILING_GOTHIC;COMPILING_SPACER;WIN32;NDEBUG;_WINDOWS;_WIN32;_MFC;_ZERROR;_SPACER;NONET;LANG_DEU;_VDFS;GOTHIC_MODKIT;GOLDMASTER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerListingLocation>.\goldmaster\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\goldmaster\Spacer2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\goldmaster\</ObjectFileName>
+      <ProgramDataBaseFileName>.\goldmaster\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zm700 </AdditionalOptions>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\goldmaster\Spacer2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0407</Culture>
+      <AdditionalIncludeDirectories>Res/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;COMPILING_SPACER;LANG_DEU;GOTHIC_MODKIT;GOLDMASTER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\goldmaster\Spacer2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;afxmem.obj;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\binaries\System\Spacer2-gold.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries\Miles\lib\win;..\..\libraries\BugslayerUtil\lib\;..\..\libraries\Vdfs\lib;..\..\libraries\mallocwin32debug\lib\;..\..\libraries\S3tc\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalOptions> /FIXED:NO</AdditionalOptions>
+      <AdditionalDependencies>wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>8388608</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>.\res\;.\_bert\;.\_carsten\;..\..\libraries\Miles\inc\;..\..\libraries\Vdfs\inc\;..\..\libraries\Glide\inc\;..\..\libraries\Bink\inc\;..\ZenGin\_kurt\;.\_andre\;..\ZenGin\res;..\ZenGin\_andre\;..\ZenGin\_bert\;..\ZenGin\_carsten\;..\ZenGin\_dieter\;..\ZenGin\_ulf\;..\ZenGin\_roman\;..\ZenGin\_manuel;..\Gothic\_manuel;..\Gothic\_andre\;..\Gothic\_bert\;..\Gothic\_roman\;..\Gothic\_carsten\;..\Gothic\_ulf\;..\Gothic\_kurt\;..\..\libraries\DirectX\inc\;..\..\libraries\BugslayerUtil\inc\;..\ZenGin\;..\..\libraries\cj60\inc\;..\..\libraries\S3tc\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILING_GOTHIC;COMPILING_SPACER;_DEBUG;WIN32;_WINDOWS;_MFC;_ZERROR;_WIN32;NONET;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\debug\Spacer2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug\</ProgramDataBaseFileName>
+      <AdditionalOptions> /I /Zm700 </AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\debug\Spacer2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0407</Culture>
+      <AdditionalIncludeDirectories>Res/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;COMPILING_SPACER;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\debug\Spacer2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\binaries\_work\tools\Spacer\Spacer2-dbg.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries\Miles\lib\win;..\..\libraries\BugslayerUtil\lib;..\..\libraries\Vdfs\lib;..\..\libraries\mallocwin32debug\lib\;..\..\libraries\S3tc\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>8388608</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalIncludeDirectories>.\res\;.\_bert\;.\_carsten\;..\..\libraries\Miles\inc\;..\..\libraries\Vdfs\inc\;..\..\libraries\Glide\inc\;..\..\libraries\Bink\inc\;..\ZenGin\_kurt\;.\_andre\;..\ZenGin\res;..\ZenGin\_andre\;..\ZenGin\_bert\;..\ZenGin\_carsten\;..\ZenGin\_dieter\;..\ZenGin\_manuel\;..\Gothic\_manuel\;..\ZenGin\_ulf\;..\ZenGin\_roman\;..\Gothic\_andre\;..\Gothic\_bert\;..\Gothic\_roman\;..\Gothic\_carsten\;..\Gothic\_ulf\;..\Gothic\_kurt\;..\..\libraries\DirectX\inc\;..\..\libraries\BugslayerUtil\inc\;..\ZenGin\;..\..\libraries\cj60\inc\;..\..\libraries\S3tc\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILING_GOTHIC;COMPILING_SPACER;WIN32;NDEBUG;_WINDOWS;_WIN32;_MFC;_ZERROR;_SPACER;NONET;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\release\Spacer2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\release\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zm700 </AdditionalOptions>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\release\Spacer2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0407</Culture>
+      <AdditionalIncludeDirectories>Res/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;COMPILING_SPACER;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\release\Spacer2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\binaries\_work\tools\Spacer\Spacer2.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries\Miles\lib\win;..\..\libraries\BugslayerUtil\lib\;..\..\libraries\Vdfs\lib;..\..\libraries\mallocwin32debug\lib\;..\..\libraries\S3tc\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalOptions> /FIXED:NO</AdditionalOptions>
+      <AdditionalDependencies>wsock32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>8388608</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Gothic\_andre\oCsManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_andre\oCsPlayer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_andre\oCsProps.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_andre\oCsTrigger.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oBinkPlayer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oGameInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oGameManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oMenuSavegame.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oMenu_Tools.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\ooBert.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oPlayerInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oSavegame.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oSysInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oTrigger.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oViewProgressbar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_bert\oViewStatusbar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oAiHuman_Magic.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oMagFrontier.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oMagic.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oMenu_Main.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oMenu_Status.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\ooCarsten.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oSpell.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oVisFx.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oVisFx_Edit.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_carsten\oVisFx_MultiTarget.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_kurt\oMusicZone.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_manuel\oCollisionObjectMiscChar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oDamage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oDocumentManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oInformationManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oLogManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oNpc_Damage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oNpc_Fight.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oNpc_Move.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oViewDialogInventory.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oViewDialogItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oViewDialogItemContainer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oViewDialogStealContainer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oViewDialogTrade.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oViewDocument.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_roman\oViewDocumentMap.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oAiHuman.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oAiShoot.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oAniCtrl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oBarrier.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oDoc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oFocus.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oGame.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oGameExternal.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oGameKeys.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oGuilds.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oHelp.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oInventory.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oItemReact.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oMission.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oMobInter.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oNews.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oNpc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oNpcInv.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oNpcMessages.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oNpcStates.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oObjFactory.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oParticleControl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oPortals.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oRoutine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oSpawn.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oSvm.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oText.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oVob.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oWaynet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\Gothic\_ulf\oWorld.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\zLocal.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsContext.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsCutscene.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsLib.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsPlayer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsPool.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_andre\zCCsProps.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zBinkPlayer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zBuffer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zDisk.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zDisk_Vdfs.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zError.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zFileCsv.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zGameInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetEventMan.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetHost.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetMessage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetSession.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetTypes.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetVersion.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNetVobControl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zNet_Win32.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zOption.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zPlayerGroup.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zPlayerInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zScanDir.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zString.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zSysInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zVideoPlayer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zViewProgressbar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zViewStatusbar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zWorldInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_bert\zzBert.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Core.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Dialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Movement.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Util.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zCpuSpecs.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zCsCamera.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zDbgTools.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zExceptionHandler.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zFlash.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zInput.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zInput_Win32.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zKbSplines.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMathTools.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMenu.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMenu_Item.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMusic.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zMusic_Dm.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zSndMss.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zVideo_Win32.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zViews.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zWin32.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_carsten\zzCarsten.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\z3D.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zAi.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zAiPlayer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zAlgebra.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zArchiver.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zArchiver2.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zArchiverGeneric.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBsp.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBspBuild.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBspIndoor.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zBVolume.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCamera.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionDetector.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionMiscExtra.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObject.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObjectMisc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObjectMiscChar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zContainer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zConvexCollision.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zDecal.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zEigen.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zEngine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zFft.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zFile3D.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zFileQBsp.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zLensflare.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMaterial.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemory.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemory_Generic.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemPool.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMesh.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zModel.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zModelProto.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMorphMesh.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMoving.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zObject.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zParticle.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPhysics.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPluecker.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPolygon.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPolyPool.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPolyStrip.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zPrime.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zProgMesh.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zProgMeshBuild.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zProgMeshProto.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zQuadMark.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRayCache.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRenderer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRenderLightContainer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zRenderManager.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zResource.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSession.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSky.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSky_Outdoor.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSound.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSoundMan.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zSparseArray.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTexFile.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTexture.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zThread.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTools.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTrigo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zTypes3D.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVertexBuffer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVob.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVobLight.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVobMisc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zVobMove.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zWorld.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zWorldLight.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zzDieter.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zZone.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zMusicCtrl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_DxtcCache.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Init.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Render.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_State.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_SurfaceCache.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Texture.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_VertexBuffer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Vid.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zTexConvert.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_kurt\zTexConvPalette.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_manuel\zAccount.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewBase.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewDialogChoice.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewDraw.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewFx.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewObject.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewPrint.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_roman\zViewPrint_Font.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zConsole.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zEventMan.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zFonts.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zGrafix.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zParser.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zParser_Lexer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zParser_Symbol.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zWaynet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_ulf\zzUlfi.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\MsgMetaInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCCsDebugger.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCCsSequencer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCCsSettingDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCDiagramDraw.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCDiagramVp.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCDiagramVpD.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCList_Ou.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_andre\spcCTrackCtrl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\MainFrm.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\Spacer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\SpacerDoc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\SpacerView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCBBoxDefineDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCClassInfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCColorListbox.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCCompileLightDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCCompileWorldDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCConfiguration.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCConsoleDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCDibSection.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCDragVob.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCHelpDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfoBar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobarVobsPlus.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Camera.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Events.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Lights.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Materials.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Scripts.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Sounds.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Specials.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Vertex.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInfobar_Vobs.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCInputDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCList_Materials.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCList_Vobs.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCMacroDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCMatListbox.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCMessageDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCNewMaterialDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjectBar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjectCreationPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjectManipulatePage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjectModifyPage.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjectScriptedDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjectSheet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjectSoundDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjPreset.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCObjPropList.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCParticleControl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCPositionDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCScriptTool.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCScriptWizard.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCSetGeneral.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCSetView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCTextInfoDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCViewProgressbar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCVobContainer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCVobListDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCVobLogicalDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCVobTreeItemList.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCWindowResizeStyle.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCWorkInfoDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCWorkProgressDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcCWorldAnalyseDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\spcMoving.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\Spc_ParseTools.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="_bert\StdAfx.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /I /Zm700   /I /Zm700 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm700   /Zm700 </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libraries\Bink\inc\Bink.h" />
+    <ClInclude Include="..\..\libraries\BugslayerUtil\inc\BaseTsd.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\d3dx.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\d3dxcore.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\d3dxerr.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\d3dxmath.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\d3dxshapes.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\d3dxsprite.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\dls1.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\dmdls.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\dmerror.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\dmksctrl.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\dmusbuff.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\dmusicc.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\Dmusici.h" />
+    <ClInclude Include="..\..\libraries\Miles\inc\Mss.h" />
+    <ClInclude Include="..\..\libraries\S3tc\inc\S3_Intrf.h" />
+    <ClInclude Include="..\..\libraries\SmartHeap\inc\SmrtHeap.h" />
+    <ClInclude Include="..\..\libraries\SmartHeap\inc\SmrtHeap.hpp" />
+    <ClInclude Include="..\Gothic\_andre\oCsManager.h" />
+    <ClInclude Include="..\Gothic\_andre\oCsPlayer.h" />
+    <ClInclude Include="..\Gothic\_andre\oCsProps.h" />
+    <ClInclude Include="..\Gothic\_andre\oCsTrigger.h" />
+    <ClInclude Include="..\Gothic\_bert\oBinkPlayer.h" />
+    <ClInclude Include="..\Gothic\_bert\oGameInfo.h" />
+    <ClInclude Include="..\Gothic\_bert\oGameManager.h" />
+    <ClInclude Include="..\Gothic\_bert\oMenuSavegame.h" />
+    <ClInclude Include="..\Gothic\_bert\oMenu_Tools.h" />
+    <ClInclude Include="..\Gothic\_bert\ooBert.h" />
+    <ClInclude Include="..\Gothic\_bert\oPlayerInfo.h" />
+    <ClInclude Include="..\Gothic\_bert\oSavegame.h" />
+    <ClInclude Include="..\Gothic\_bert\oSysInfo.h" />
+    <ClInclude Include="..\Gothic\_bert\oTrigger.h" />
+    <ClInclude Include="..\Gothic\_bert\oViewProgressbar.h" />
+    <ClInclude Include="..\Gothic\_bert\oViewStatusbar.h" />
+    <ClInclude Include="..\Gothic\_carsten\oMagFrontier.h" />
+    <ClInclude Include="..\Gothic\_carsten\oMagic.h" />
+    <ClInclude Include="..\Gothic\_carsten\oMenu_Main.h" />
+    <ClInclude Include="..\Gothic\_carsten\oMenu_Status.h" />
+    <ClInclude Include="..\Gothic\_carsten\ooCarsten.h" />
+    <ClInclude Include="..\Gothic\_carsten\oSpell.h" />
+    <ClInclude Include="..\Gothic\_carsten\oVisFx.h" />
+    <ClInclude Include="..\Gothic\_carsten\oVisFx_Edit.h" />
+    <ClInclude Include="..\Gothic\_carsten\oVisFx_MultiTarget.h" />
+    <ClInclude Include="..\Gothic\_kurt\oMusicZone.h" />
+    <ClInclude Include="..\Gothic\_manuel\oCollisionObjectMiscChar.h" />
+    <ClInclude Include="..\Gothic\_roman\oDamage.h" />
+    <ClInclude Include="..\Gothic\_roman\oDocumentManager.h" />
+    <ClInclude Include="..\Gothic\_roman\oIncDialogs.h" />
+    <ClInclude Include="..\Gothic\_roman\oIncViews.h" />
+    <ClInclude Include="..\Gothic\_roman\oInformationManager.h" />
+    <ClInclude Include="..\Gothic\_roman\oLogManager.h" />
+    <ClInclude Include="..\Gothic\_roman\oNpc_Damage.h" />
+    <ClInclude Include="..\Gothic\_roman\oNPC_Fight.h" />
+    <ClInclude Include="..\Gothic\_roman\oNPC_Move.h" />
+    <ClInclude Include="..\Gothic\_roman\oViewDialogInventory.h" />
+    <ClInclude Include="..\Gothic\_roman\oViewDialogItem.h" />
+    <ClInclude Include="..\Gothic\_roman\oViewDialogItemContainer.h" />
+    <ClInclude Include="..\Gothic\_roman\oViewDialogStealContainer.h" />
+    <ClInclude Include="..\Gothic\_roman\oViewDialogTrade.h" />
+    <ClInclude Include="..\Gothic\_roman\oViewDocument.h" />
+    <ClInclude Include="..\Gothic\_roman\oViewDocumentMap.h" />
+    <ClInclude Include="..\Gothic\_ulf\oAiHuman.h" />
+    <ClInclude Include="..\Gothic\_ulf\oAiShoot.h" />
+    <ClInclude Include="..\Gothic\_ulf\oAniCtrl.h" />
+    <ClInclude Include="..\Gothic\_ulf\oBarrier.h" />
+    <ClInclude Include="..\Gothic\_ulf\oDialog.h" />
+    <ClInclude Include="..\Gothic\_ulf\oDoc.h" />
+    <ClInclude Include="..\Gothic\_ulf\oFocus.h" />
+    <ClInclude Include="..\Gothic\_ulf\oGame.h" />
+    <ClInclude Include="..\Gothic\_ulf\oGuilds.h" />
+    <ClInclude Include="..\Gothic\_ulf\oHelp.h" />
+    <ClInclude Include="..\Gothic\_ulf\oInfo.h" />
+    <ClInclude Include="..\Gothic\_ulf\oInventory.h" />
+    <ClInclude Include="..\Gothic\_ulf\oItem.h" />
+    <ClInclude Include="..\Gothic\_ulf\oItemReact.h" />
+    <ClInclude Include="..\Gothic\_ulf\oMission.h" />
+    <ClInclude Include="..\Gothic\_ulf\oMobInter.h" />
+    <ClInclude Include="..\Gothic\_ulf\oNews.h" />
+    <ClInclude Include="..\Gothic\_ulf\oNpc.h" />
+    <ClInclude Include="..\Gothic\_ulf\oNpcMessages.h" />
+    <ClInclude Include="..\Gothic\_ulf\oNpcStates.h" />
+    <ClInclude Include="..\Gothic\_ulf\oObjFactory.h" />
+    <ClInclude Include="..\Gothic\_ulf\ooUlfi.h" />
+    <ClInclude Include="..\Gothic\_ulf\oParticleControl.h" />
+    <ClInclude Include="..\Gothic\_ulf\oPortals.h" />
+    <ClInclude Include="..\Gothic\_ulf\oRoutine.h" />
+    <ClInclude Include="..\Gothic\_ulf\oSpawn.h" />
+    <ClInclude Include="..\Gothic\_ulf\oSvm.h" />
+    <ClInclude Include="..\Gothic\_ulf\oText.h" />
+    <ClInclude Include="..\Gothic\_ulf\oVob.h" />
+    <ClInclude Include="..\Gothic\_ulf\oWaynet.h" />
+    <ClInclude Include="..\Gothic\_ulf\oWorld.h" />
+    <ClInclude Include="..\ZenGin\res\resource.h" />
+    <ClInclude Include="..\ZenGin\res\zWin32_Resource.h" />
+    <ClInclude Include="..\ZenGin\res\zWin32_Version.h" />
+    <ClInclude Include="..\ZenGin\zLocal.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsContext.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsCutscene.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsLib.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsManager.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsPlayer.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsPool.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsProps.h" />
+    <ClInclude Include="..\ZenGin\_bert\zBinkPlayer.h" />
+    <ClInclude Include="..\ZenGin\_bert\zBuffer.h" />
+    <ClInclude Include="..\ZenGin\_bert\zDisk.h" />
+    <ClInclude Include="..\ZenGin\_bert\zDisk_Vdfs.h" />
+    <ClInclude Include="..\ZenGin\_bert\zError.h" />
+    <ClInclude Include="..\ZenGin\_bert\zFileCsv.h" />
+    <ClInclude Include="..\ZenGin\_bert\zGameInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNet.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetEventMan.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetHost.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetManager.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetMessage.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetSession.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetTypes.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetVersion.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetVobControl.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNet_Win32.h" />
+    <ClInclude Include="..\ZenGin\_bert\zOption.h" />
+    <ClInclude Include="..\ZenGin\_bert\zPlayerGroup.h" />
+    <ClInclude Include="..\ZenGin\_bert\zPlayerInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zQueue.h" />
+    <ClInclude Include="..\ZenGin\_bert\zScanDir.h" />
+    <ClInclude Include="..\ZenGin\_bert\zSpyTypes.h" />
+    <ClInclude Include="..\ZenGin\_bert\zString.h" />
+    <ClInclude Include="..\ZenGin\_bert\zSysInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zVideoPlayer.h" />
+    <ClInclude Include="..\ZenGin\_bert\zViewProgressbar.h" />
+    <ClInclude Include="..\ZenGin\_bert\zViewStatusbar.h" />
+    <ClInclude Include="..\ZenGin\_bert\zWorldInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zzBert.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Core.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Dialog.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Movement.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Util.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zCpuSpecs.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zCsCamera.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zDbgTools.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zExceptionHandler.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zExHnd_Bugslayer.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zFlash.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zInput.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zInput_Const.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zInput_Win32.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zKbSplines.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zList2.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMathTools.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMenu.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMenu_Item.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMusic.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMusic_Dm.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zOption_Const.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zSndMss.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zVideo_Win32.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zViews.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zWin32.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zWin32_Internal.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zzCarsten.h" />
+    <ClInclude Include="..\ZenGin\_dieter\z3D.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zAi.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zAiPlayer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zAlgebra.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchive2Container.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchiver.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchiver2.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchiverGeneric.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zBsp.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zBVolume.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionDetector.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionObject.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionObjectMisc.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCompilerVcWin32.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zContainer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zConvexCollision.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCore.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zEigen.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zEngine.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zFft.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zFile3D.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zFixPnt.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zLensflare.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMaterial.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemory.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Base.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Generic.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemPool.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zModel.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMorphMesh.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMoving.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zObject.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zParticle.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPhysics.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPluecker.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPolyPool.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPolyStrip.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPrime.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zProgMesh.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRayCache.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRenderer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRenderLightContainer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRenderManager.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zResource.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSession.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSky.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSky_Outdoor.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSound.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSoundMan.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSparseArray.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTexture.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zThread.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTools.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTrigo.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTypes.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTypes3D.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVertexBuffer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVertexTransform.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVisual.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVob.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVobMisc.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zWorld.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zzDieter.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zZone.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zMusicCtrl.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_DxtcCache.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Init.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Render.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_State.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_SurfaceCache.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Texture.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_VertexBuffer.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Vid.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zTexConvert.h" />
+    <ClInclude Include="..\ZenGin\_manuel\zAccount.h" />
+    <ClInclude Include="..\ZenGin\_roman\zIncDialogs.h" />
+    <ClInclude Include="..\ZenGin\_roman\zIncViews.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewBase.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewDialog.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewDialogChoice.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewDraw.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewFx.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewObject.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewPrint.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewPrint_Font.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zConsole.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zEventMan.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zFonts.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zGrafix.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zList.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zParser.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zParser_Const.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zParser_Symbol.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zView.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zWaynet.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zzUlfi.h" />
+    <ClInclude Include="_andre\spcCCsSequencer.h" />
+    <ClInclude Include="_andre\spcCCsSettingDlg.h" />
+    <ClInclude Include="_andre\spcCDiagramDraw.h" />
+    <ClInclude Include="_andre\spcCDiagramVp.h" />
+    <ClInclude Include="_andre\spcCDiagramVpD.h" />
+    <ClInclude Include="_andre\spcCList_Ou.h" />
+    <ClInclude Include="_andre\spcCTrackCtrl.h" />
+    <ClInclude Include="_bert\MainFrm.h" />
+    <ClInclude Include="_bert\resource.h" />
+    <ClInclude Include="_bert\Spacer.h" />
+    <ClInclude Include="_bert\SpacerDoc.h" />
+    <ClInclude Include="_bert\SpacerView.h" />
+    <ClInclude Include="_bert\spcCBBoxDefineDlg.h" />
+    <ClInclude Include="_bert\spcCClassInfo.h" />
+    <ClInclude Include="_bert\spcCColorListbox.h" />
+    <ClInclude Include="_bert\spcCCompileAction.h" />
+    <ClInclude Include="_bert\spcCCompileLightDlg.h" />
+    <ClInclude Include="_bert\spcCCompileWorldDlg.h" />
+    <ClInclude Include="_bert\spcCConfiguration.h" />
+    <ClInclude Include="_bert\spcCConsoleDialog.h" />
+    <ClInclude Include="_bert\spcCDibSection.h" />
+    <ClInclude Include="_bert\spcCDragVob.h" />
+    <ClInclude Include="_bert\spcCHelpDlg.h" />
+    <ClInclude Include="_bert\spcCInfoBar.h" />
+    <ClInclude Include="_bert\spcCInfobarVobsPlus.h" />
+    <ClInclude Include="_bert\spcCInfobar_Camera.h" />
+    <ClInclude Include="_bert\spcCInfobar_Events.h" />
+    <ClInclude Include="_bert\spcCInfobar_Lights.h" />
+    <ClInclude Include="_bert\spcCInfobar_Materials.h" />
+    <ClInclude Include="_bert\spcCInfobar_Scripts.h" />
+    <ClInclude Include="_bert\spcCInfobar_Sounds.h" />
+    <ClInclude Include="_bert\spcCInfobar_Specials.h" />
+    <ClInclude Include="_bert\spcCInfobar_Vertex.h" />
+    <ClInclude Include="_bert\spcCInfobar_Vobs.h" />
+    <ClInclude Include="_bert\spcCInputDialog.h" />
+    <ClInclude Include="_bert\spcCList_Materials.h" />
+    <ClInclude Include="_bert\spcCList_Vobs.h" />
+    <ClInclude Include="_bert\spcCMacroDlg.h" />
+    <ClInclude Include="_bert\spcCMatListbox.h" />
+    <ClInclude Include="_bert\spcCMessageDialog.h" />
+    <ClInclude Include="_bert\spcCNewMaterialDialog.h" />
+    <ClInclude Include="_bert\spcCObjectBar.h" />
+    <ClInclude Include="_bert\spcCObjectCreationPage.h" />
+    <ClInclude Include="_bert\spcCObjectManipulatePage.h" />
+    <ClInclude Include="_bert\spcCObjectModifyPage.h" />
+    <ClInclude Include="_bert\spcCObjectScriptedDlg.h" />
+    <ClInclude Include="_bert\spcCObjectSheet.h" />
+    <ClInclude Include="_bert\spcCObjectSoundDialog.h" />
+    <ClInclude Include="_bert\spcCObjPreset.h" />
+    <ClInclude Include="_bert\spcCObjPropList.h" />
+    <ClInclude Include="_bert\spcCParticleControl.h" />
+    <ClInclude Include="_bert\spcCPositionDlg.h" />
+    <ClInclude Include="_bert\spcCScriptTool.h" />
+    <ClInclude Include="_bert\spcCScriptWizard.h" />
+    <ClInclude Include="_bert\spcCSetGeneral.h" />
+    <ClInclude Include="_bert\spcCSetView.h" />
+    <ClInclude Include="_bert\spcCTextInfoDlg.h" />
+    <ClInclude Include="_bert\spcCViewProgressbar.h" />
+    <ClInclude Include="_bert\spcCVobContainer.h" />
+    <ClInclude Include="_bert\spcCVobListDialog.h" />
+    <ClInclude Include="_bert\spcCVobLogicalDialog.h" />
+    <ClInclude Include="_bert\spcCVobPropertyDialog.h" />
+    <ClInclude Include="_bert\spcCVobTreeItemList.h" />
+    <ClInclude Include="_bert\spcCWindowResizeStyle.h" />
+    <ClInclude Include="_bert\spcCWorkInfoDlg.h" />
+    <ClInclude Include="_bert\spcCWorkProgressDlg.h" />
+    <ClInclude Include="_bert\spcCWorldAnalyseDlg.h" />
+    <ClInclude Include="_bert\spcMoving.h" />
+    <ClInclude Include="_bert\Spc_ParseTools.h" />
+    <ClInclude Include="_bert\StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\libraries\DirectX\inc\d3dxmath.inl" />
+    <CustomBuild Include="res\Cursor1.cur" />
+    <CustomBuild Include="res\Spacer.rc2" />
+    <CustomBuild Include="_bert\spcMatCalc.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\libraries\Bink\lib\BinkW32.lib" />
+    <Library Include="..\..\libraries\BugslayerUtil\lib\BugslayerUtil.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\d3dx.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\ddraw.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\dinput.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\dsound.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\dxguid.lib" />
+    <Library Include="..\..\libraries\MallocWin32Debug\lib\MallocWin32Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\libraries\Miles\lib\Mss32.lib" />
+    <Library Include="..\..\libraries\S3tc\lib\S3tc.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Icons_VobList.bmp" />
+    <Image Include="res\Icons_VobProps.bmp" />
+    <Image Include="res\Spacer.ico" />
+    <Image Include="res\SpacerDoc.ico" />
+    <Image Include="res\Toolbar_Material.bmp" />
+    <Image Include="res\Toolbar_Objects.bmp" />
+    <Image Include="res\Toolbar_Pages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="_bert\Spacer.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">_bert;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_bert;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_bert;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\Spacer2.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

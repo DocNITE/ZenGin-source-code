@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Goldmaster|Win32">
+      <Configuration>Goldmaster</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/release/Gothic", VBAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{21CE32F5-DC84-40A0-B189-8954790AF533}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\debug\</OutDir>
+    <IntDir>.\debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">
+    <OutDir>.\goldmaster\</OutDir>
+    <IntDir>.\goldmaster\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\release\</OutDir>
+    <IntDir>.\release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>..\\ZenGin\res;..\\ZenGin\_manuel;..\\Gothic\_manuel;..\\Gothic\_roman;..\\Gothic\_kurt;..\\netgothic\_bert;..\\ZenGin;..\\ZenGin\_kurt;..\\ZenGin\_andre;..\\ZenGin\_bert;..\\ZenGin\_carsten;..\\ZenGin\_dieter;..\\ZenGin\_ulf;..\\ZenGin\_roman;..\\Gothic\_andre;..\\Gothic\_bert;..\\Gothic\_carsten;..\\Gothic\_ulf;..\..\libraries\SmartHeap\inc;..\..\libraries\Miles\inc;..\..\libraries\DirectX\inc;..\..\libraries\bink\inc;..\..\libraries\BugSlayerUtil\inc;..\..\libraries\Vdfs\inc;..\..\libraries\Glide\inc;..\..\libraries\ProtectCD\inc;..\..\libraries\S3tc\inc;..\..\libraries\SecuROM\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILING_GOTHIC;WIN32;_DEBUG;_WINDOWS;_ZERROR;NONET;_VDFS;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\debug\Gothic2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\debug\Gothic2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0407</Culture>
+      <PreprocessorDefinitions>_DEBUG;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\debug\Gothic2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libm.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\binaries\System\Gothic2-dbg.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries\S3tc\lib\;..\..\libraries\DirectX\lib\;..\..\libraries\Miles\lib\;..\..\libraries\BugSlayerUtil\lib;..\..\libraries\Vdfs\lib;..\..\libraries\ProtectCD\lib;..\..\libraries\MallocWin32Debug\lib\;..\..\libraries\S3tc\lib;..\..\libraries\SmartHeap\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;comctl32.lib;imm32.lib;win32spl.lib;winmm.lib;wow32.lib;wsock32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>..\..\libraries\SmartHeap\inc\;..\..\libraries\DirectX\inc\;..\..\libraries\ProtectCD\inc;..\..\libraries\BugSlayerUtil\inc\;..\..\libraries\S3tc\inc\;..\\ZenGin\res;..\\ZenGin\_manuel;..\\Gothic\_manuel;..\\Gothic\_roman;..\\Gothic\_kurt;..\\netgothic\_bert;..\\ZenGin;..\\ZenGin\_kurt;..\\ZenGin\_andre;..\\ZenGin\_bert;..\\ZenGin\_carsten;..\\ZenGin\_dieter;..\\ZenGin\_ulf;..\\ZenGin\_roman;..\\Gothic\_andre;..\\Gothic\_bert;..\\Gothic\_carsten;..\\Gothic\_ulf;..\..\libraries\SmartHeap\inc;..\..\libraries\Miles\inc;..\..\libraries\DirectX\inc;..\..\libraries\bink\inc;..\..\libraries\BugSlayerUtil\inc;..\..\libraries\Vdfs\inc;..\..\libraries\Glide\inc;..\..\libraries\S3tc\inc;..\..\libraries\SecuROM\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILING_GOTHIC;WIN32;NDEBUG;_WINDOWS;_ZERROR;_VDFS;NONET;LANG_DEU;GOLDMASTER;SECUROM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerListingLocation>.\goldmaster\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\goldmaster\Gothic2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\goldmaster\</ObjectFileName>
+      <ProgramDataBaseFileName>.\goldmaster\</ProgramDataBaseFileName>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\goldmaster\Gothic2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0407</Culture>
+      <PreprocessorDefinitions>NDEBUG;LANG_DEU;GOLDMASTER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\goldmaster\Gothic2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libmmt;libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\binaries\System\Gothic2-gold.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries\DirectX\lib\;..\..\libraries\Miles\lib\;..\..\libraries\BugSlayerUtil\lib;..\..\libraries\Vdfs\lib;..\..\libraries\ProtectCD\lib;..\..\libraries\MallocWin32Debug\lib\;..\..\libraries\S3tc\lib;..\..\libraries\SmartHeap\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalOptions> /FIXED:NO</AdditionalOptions>
+      <AdditionalDependencies>shdw32mt.lib;dsound.lib;mss32.lib;version.lib;comctl32.lib;imm32.lib;win32spl.lib;winmm.lib;wow32.lib;wsock32.lib;bugslayerutil.lib;mallocwin32debug.lib;dxguid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>8388608</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\libraries\SmartHeap\inc\;..\..\libraries\DirectX\inc\;..\..\libraries\ProtectCD\inc;..\..\libraries\BugSlayerUtil\inc\;..\..\libraries\S3tc\inc\;..\\ZenGin\res;..\\ZenGin\_manuel;..\\Gothic\_manuel;..\\Gothic\_roman;..\\Gothic\_kurt;..\\netgothic\_bert;..\\ZenGin;..\\ZenGin\_kurt;..\\ZenGin\_andre;..\\ZenGin\_bert;..\\ZenGin\_carsten;..\\ZenGin\_dieter;..\\ZenGin\_ulf;..\\ZenGin\_roman;..\\Gothic\_andre;..\\Gothic\_bert;..\\Gothic\_carsten;..\\Gothic\_ulf;..\..\libraries\SmartHeap\inc;..\..\libraries\Miles\inc;..\..\libraries\DirectX\inc;..\..\libraries\bink\inc;..\..\libraries\BugSlayerUtil\inc;..\..\libraries\Vdfs\inc;..\..\libraries\Glide\inc;..\..\libraries\S3tc\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COMPILING_GOTHIC;WIN32;NDEBUG;_WINDOWS;_ZERROR;_VDFS;NONET;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\release\Gothic2.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\release\</ProgramDataBaseFileName>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\release\Gothic2.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0407</Culture>
+      <PreprocessorDefinitions>NDEBUG;LANG_DEU;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\release\Gothic2.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libmmt;libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\binaries\System\Gothic2.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\libraries\DirectX\lib\;..\..\libraries\Miles\lib\;..\..\libraries\BugSlayerUtil\lib;..\..\libraries\Vdfs\lib;..\..\libraries\ProtectCD\lib;..\..\libraries\MallocWin32Debug\lib\;..\..\libraries\S3tc\lib;..\..\libraries\SmartHeap\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalOptions> /FIXED:NO</AdditionalOptions>
+      <AdditionalDependencies>shdw32mt.lib;dsound.lib;mss32.lib;version.lib;comctl32.lib;imm32.lib;win32spl.lib;winmm.lib;wow32.lib;wsock32.lib;bugslayerutil.lib;mallocwin32debug.lib;dxguid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>8388608</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ZenGin\zLocal.cpp" />
+    <ClCompile Include="..\ZenGin\_andre\zCCsContext.cpp" />
+    <ClCompile Include="..\ZenGin\_andre\zCCsCutscene.cpp" />
+    <ClCompile Include="..\ZenGin\_andre\zCCsLib.cpp" />
+    <ClCompile Include="..\ZenGin\_andre\zCCsManager.cpp" />
+    <ClCompile Include="..\ZenGin\_andre\zCCsPlayer.cpp" />
+    <ClCompile Include="..\ZenGin\_andre\zCCsPool.cpp" />
+    <ClCompile Include="..\ZenGin\_andre\zCCsProps.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zBinkPlayer.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zBuffer.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zDisk.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zDisk_Vdfs.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zError.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zFileCsv.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zGameInfo.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNet.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetEventMan.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetHost.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetManager.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetMessage.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetSession.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetTypes.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetVersion.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNetVobControl.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zNet_Win32.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zOption.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zPlayerGroup.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zPlayerInfo.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zScanDir.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zString.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zSysInfo.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zVideoPlayer.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zViewProgressbar.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zViewStatusbar.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zWorldInfo.cpp" />
+    <ClCompile Include="..\ZenGin\_bert\zzBert.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Core.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Dialog.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Movement.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zAiCamera_Util.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zCsCamera.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zDbgTools.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zExceptionHandler.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zFlash.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zInput.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zInput_Win32.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zKbSplines.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zMathTools.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zMenu.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zMenu_Item.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zMusic.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zMusic_Dm.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zSndMss.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zVideo_Win32.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zViews.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zWin32.cpp" />
+    <ClCompile Include="..\ZenGin\_carsten\zzCarsten.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\z3D.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zAi.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zAiPlayer.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zAlgebra.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zArchiver.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zArchiver2.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zArchiverGeneric.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zBsp.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zBspBuild.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zBspIndoor.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zBVolume.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zCamera.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionDetector.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObject.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObjectMisc.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zCollisionObjectMiscChar.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zContainer.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zConvexCollision.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zDecal.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zEigen.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zEngine.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zFft.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zFile3D.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zFileQBsp.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zLensflare.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zMaterial.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zMemory.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zMemory_Generic.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zMemory_Win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\ZenGin\_dieter\zMemPool.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zMesh.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zModel.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zModelProto.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zMorphMesh.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zMoving.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zObject.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zParticle.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zPhysics.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zPluecker.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zPolygon.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zPolyPool.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zPolyStrip.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zPrime.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zProgMesh.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zProgMeshBuild.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zProgMeshProto.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zQuadMark.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zRayCache.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zRenderer.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zRenderLightContainer.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zRenderManager.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zResource.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zSession.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zSky.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zSky_Outdoor.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zSound.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zSoundMan.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zSparseArray.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zTexFile.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zTexture.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zThread.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zTools.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zTrigo.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zTypes3D.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zVertexBuffer.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zVob.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zVobLight.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zVobMisc.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zVobMove.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zWorld.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zWorldLight.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zzDieter.cpp" />
+    <ClCompile Include="..\ZenGin\_dieter\zZone.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zMusicCtrl.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_DxtcCache.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Init.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Render.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_State.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_SurfaceCache.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Texture.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_VertexBuffer.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zRndD3D_Vid.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zTexConvert.cpp" />
+    <ClCompile Include="..\ZenGin\_kurt\zTexConvPalette.cpp" />
+    <ClCompile Include="..\ZenGin\_manuel\zAccount.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewBase.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewDialog.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewDialogChoice.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewDraw.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewFx.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewObject.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewPrint.cpp" />
+    <ClCompile Include="..\ZenGin\_roman\zViewPrint_Font.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zConsole.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zEventMan.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zFonts.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zGrafix.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zParser.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zParser_Lexer.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zParser_Symbol.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zView.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zWaynet.cpp" />
+    <ClCompile Include="..\ZenGin\_ulf\zzUlfi.cpp" />
+    <ClCompile Include="_andre\oCsManager.cpp" />
+    <ClCompile Include="_andre\oCsPlayer.cpp" />
+    <ClCompile Include="_andre\oCsProps.cpp" />
+    <ClCompile Include="_andre\oCsTrigger.cpp" />
+    <ClCompile Include="_bert\oBinkPlayer.cpp" />
+    <ClCompile Include="_bert\oGameInfo.cpp" />
+    <ClCompile Include="_bert\oGameManager.cpp" />
+    <ClCompile Include="_bert\oMenuSavegame.cpp" />
+    <ClCompile Include="_bert\oMenu_Tools.cpp" />
+    <ClCompile Include="_bert\ooBert.cpp" />
+    <ClCompile Include="_bert\oPlayerInfo.cpp" />
+    <ClCompile Include="_bert\oSaveGame.cpp" />
+    <ClCompile Include="_bert\oSysInfo.cpp" />
+    <ClCompile Include="_bert\oTrigger.cpp" />
+    <ClCompile Include="_bert\oViewProgressbar.cpp" />
+    <ClCompile Include="_bert\oViewStatusbar.cpp" />
+    <ClCompile Include="_carsten\oAiHuman_Magic.cpp" />
+    <ClCompile Include="_carsten\oMagFrontier.cpp" />
+    <ClCompile Include="_carsten\oMagic.cpp" />
+    <ClCompile Include="_carsten\oMenu_Main.cpp" />
+    <ClCompile Include="_carsten\oMenu_Status.cpp" />
+    <ClCompile Include="_carsten\ooCarsten.cpp" />
+    <ClCompile Include="_carsten\oSpell.cpp" />
+    <ClCompile Include="_carsten\oVisFx.cpp" />
+    <ClCompile Include="_carsten\oVisFx_Edit.cpp" />
+    <ClCompile Include="_carsten\oVisFx_MultiTarget.cpp" />
+    <ClCompile Include="_kurt\oMusicZone.cpp" />
+    <ClCompile Include="_manuel\oCollisionObjectMiscChar.cpp" />
+    <ClCompile Include="_roman\oDamage.cpp" />
+    <ClCompile Include="_roman\oDocumentManager.cpp" />
+    <ClCompile Include="_roman\oInformationManager.cpp" />
+    <ClCompile Include="_roman\oLogManager.cpp" />
+    <ClCompile Include="_roman\oNpc_Damage.cpp" />
+    <ClCompile Include="_roman\oNpc_Fight.cpp" />
+    <ClCompile Include="_roman\oNpc_Move.cpp" />
+    <ClCompile Include="_roman\oViewDialogInventory.cpp" />
+    <ClCompile Include="_roman\oViewDialogItem.cpp" />
+    <ClCompile Include="_roman\oViewDialogItemContainer.cpp" />
+    <ClCompile Include="_roman\oViewDialogStealContainer.cpp" />
+    <ClCompile Include="_roman\oViewDialogTrade.cpp" />
+    <ClCompile Include="_roman\oViewDocument.cpp" />
+    <ClCompile Include="_roman\oViewDocumentMap.cpp" />
+    <ClCompile Include="_ulf\oAiHuman.cpp" />
+    <ClCompile Include="_ulf\oAiShoot.cpp" />
+    <ClCompile Include="_ulf\oAniCtrl.cpp" />
+    <ClCompile Include="_ulf\oBarrier.cpp" />
+    <ClCompile Include="_ulf\oDialog.cpp" />
+    <ClCompile Include="_ulf\oDoc.cpp" />
+    <ClCompile Include="_ulf\oFocus.cpp" />
+    <ClCompile Include="_ulf\oGame.cpp" />
+    <ClCompile Include="_ulf\oGameExternal.cpp" />
+    <ClCompile Include="_ulf\oGameKeys.cpp" />
+    <ClCompile Include="_ulf\oGuilds.cpp" />
+    <ClCompile Include="_ulf\oHelp.cpp" />
+    <ClCompile Include="_ulf\oInfo.cpp" />
+    <ClCompile Include="_ulf\oInventory.cpp" />
+    <ClCompile Include="_ulf\oItem.cpp" />
+    <ClCompile Include="_ulf\oItemReact.cpp" />
+    <ClCompile Include="_ulf\oMission.cpp" />
+    <ClCompile Include="_ulf\oMobInter.cpp" />
+    <ClCompile Include="_ulf\oNews.cpp" />
+    <ClCompile Include="_ulf\oNpc.cpp" />
+    <ClCompile Include="_ulf\oNpcInv.cpp" />
+    <ClCompile Include="_ulf\oNpcMessages.cpp" />
+    <ClCompile Include="_ulf\oNpcStates.cpp" />
+    <ClCompile Include="_ulf\oObjFactory.cpp" />
+    <ClCompile Include="_ulf\oParticleControl.cpp" />
+    <ClCompile Include="_ulf\oPortals.cpp" />
+    <ClCompile Include="_ulf\oRoutine.cpp" />
+    <ClCompile Include="_ulf\oSpawn.cpp" />
+    <ClCompile Include="_ulf\oSvm.cpp" />
+    <ClCompile Include="_ulf\oText.cpp" />
+    <ClCompile Include="_ulf\oVob.cpp" />
+    <ClCompile Include="_ulf\oWaynet.cpp" />
+    <ClCompile Include="_ulf\oWorld.cpp" />
+    <ClCompile Include="_ulf\Phoenix.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libraries\Bink\inc\Bink.h" />
+    <ClInclude Include="..\..\libraries\Bink\inc\RadBase.h" />
+    <ClInclude Include="..\..\libraries\Bink\inc\RadMem.h" />
+    <ClInclude Include="..\..\libraries\BugSlayerUtil\inc\BaseTsd.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\BaseTsd.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dx.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxCore.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxErr.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxMath.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxShapes.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\D3dxSprite.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\Dls1.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmDls.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmError.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmKsCtrl.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\DmPlugin.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\DMusBuff.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\DMusicC.h" />
+    <ClInclude Include="..\..\libraries\DirectX\inc\DMusicI.h" />
+    <ClInclude Include="..\..\libraries\Miles\inc\Mss.h" />
+    <ClInclude Include="..\..\libraries\S3tc\inc\S3_Intrf.h" />
+    <ClInclude Include="..\..\libraries\SmartHeap\inc\SmrtHeap.h" />
+    <ClInclude Include="..\..\libraries\SmartHeap\inc\SmrtHeap.hpp" />
+    <ClInclude Include="..\..\libraries\Vdfs\inc\Vdfs32g.h" />
+    <ClInclude Include="..\ZenGin\res\zWin32_Resource.h" />
+    <ClInclude Include="..\ZenGin\res\zWin32_Version.h" />
+    <ClInclude Include="..\ZenGin\zLocal.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsContext.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsCutscene.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsLib.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsManager.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsPlayer.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsPool.h" />
+    <ClInclude Include="..\ZenGin\_andre\zCCsProps.h" />
+    <ClInclude Include="..\ZenGin\_bert\zBinkPlayer.h" />
+    <ClInclude Include="..\ZenGin\_bert\zBuffer.h" />
+    <ClInclude Include="..\ZenGin\_bert\zDisk.h" />
+    <ClInclude Include="..\ZenGin\_bert\zDisk_Vdfs.h" />
+    <ClInclude Include="..\ZenGin\_bert\zError.h" />
+    <ClInclude Include="..\ZenGin\_bert\zFileCsv.h" />
+    <ClInclude Include="..\ZenGin\_bert\zGameInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNet.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetEventMan.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetHost.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetManager.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetMessage.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetSession.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetTypes.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetVersion.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNetVobControl.h" />
+    <ClInclude Include="..\ZenGin\_bert\zNet_Win32.h" />
+    <ClInclude Include="..\ZenGin\_bert\zOption.h" />
+    <ClInclude Include="..\ZenGin\_bert\zPlayerGroup.h" />
+    <ClInclude Include="..\ZenGin\_bert\zPlayerInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zQueue.h" />
+    <ClInclude Include="..\ZenGin\_bert\zScanDir.h" />
+    <ClInclude Include="..\ZenGin\_bert\zSpyTypes.h" />
+    <ClInclude Include="..\ZenGin\_bert\zString.h" />
+    <ClInclude Include="..\ZenGin\_bert\zSysInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zVideoPlayer.h" />
+    <ClInclude Include="..\ZenGin\_bert\zViewProgressbar.h" />
+    <ClInclude Include="..\ZenGin\_bert\zViewStatusbar.h" />
+    <ClInclude Include="..\ZenGin\_bert\zWorldInfo.h" />
+    <ClInclude Include="..\ZenGin\_bert\zzBert.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Core.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Dialog.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Movement.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zAiCamera_Util.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zCpuSpecs.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zCsCamera.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zDbgTools.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zExceptionHandler.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zExHnd_Bugslayer.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zFlash.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zInput.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zInput_Const.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zInput_Win32.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zKbSplines.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zList2.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMathTools.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMenu.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMenu_Item.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMusic.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zMusic_Dm.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zOption_Const.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zSndMss.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zVideo_Win32.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zViews.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zWin32.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zWin32_Internal.h" />
+    <ClInclude Include="..\ZenGin\_carsten\zzCarsten.h" />
+    <ClInclude Include="..\ZenGin\_dieter\z3D.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zAi.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zAiPlayer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zAlgebra.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchive2Container.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchiver.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchiver2.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zArchiverGeneric.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zBsp.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zBVolume.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionDetector.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionObject.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCollisionObjectMisc.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCompilerVcWin32.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zContainer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zConvexCollision.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zCore.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zEigen.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zEngine.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zFft.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zFile3D.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zFixPnt.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zLensflare.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMaterial.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemory.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Base.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Generic.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMemory_Win32.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\ZenGin\_dieter\zMemPool.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zModel.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMorphMesh.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zMoving.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zObject.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zParticle.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPhysics.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPluecker.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPolyPool.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPolyStrip.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zPrime.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zProgMesh.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRayCache.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRenderer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRenderLightContainer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zRenderManager.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zResource.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSession.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSky.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSky_Outdoor.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSound.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSoundMan.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zSparseArray.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTexture.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zThread.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTools.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTrigo.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTypes.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zTypes3D.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVertexBuffer.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVertexTransform.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVisual.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVob.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zVobMisc.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zWorld.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zzDieter.h" />
+    <ClInclude Include="..\ZenGin\_dieter\zZone.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zMusicCtrl.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_DxtcCache.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Init.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Render.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_State.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_SurfaceCache.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Texture.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_VertexBuffer.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zRndD3D_Vid.h" />
+    <ClInclude Include="..\ZenGin\_kurt\zTexConvert.h" />
+    <ClInclude Include="..\ZenGin\_manuel\zAccount.h" />
+    <ClInclude Include="..\ZenGin\_roman\zIncDialogs.h" />
+    <ClInclude Include="..\ZenGin\_roman\zIncViews.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewBase.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewDialog.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewDialogChoice.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewDraw.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewFx.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewObject.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewPrint.h" />
+    <ClInclude Include="..\ZenGin\_roman\zViewPrint_Font.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zConsole.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zEventMan.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zFonts.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zGrafix.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zList.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zParser.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zParser_Const.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zParser_Symbol.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zView.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zWaynet.h" />
+    <ClInclude Include="..\ZenGin\_ulf\zzUlfi.h" />
+    <ClInclude Include="_andre\oCsManager.h" />
+    <ClInclude Include="_andre\oCsPlayer.h" />
+    <ClInclude Include="_andre\oCsProps.h" />
+    <ClInclude Include="_andre\oCsTrigger.h" />
+    <ClInclude Include="_bert\oBinkPlayer.h" />
+    <ClInclude Include="_bert\oGameInfo.h" />
+    <ClInclude Include="_bert\oGameManager.h" />
+    <ClInclude Include="_bert\oMenuSavegame.h" />
+    <ClInclude Include="_bert\oMenu_Tools.h" />
+    <ClInclude Include="_bert\ooBert.h" />
+    <ClInclude Include="_bert\oPlayerInfo.h" />
+    <ClInclude Include="_bert\oSaveGame.h" />
+    <ClInclude Include="_bert\oSysInfo.h" />
+    <ClInclude Include="_bert\oTrigger.h" />
+    <ClInclude Include="_bert\oViewProgressbar.h" />
+    <ClInclude Include="_bert\oViewStatusbar.h" />
+    <ClInclude Include="_carsten\oMagFrontier.h" />
+    <ClInclude Include="_carsten\oMagic.h" />
+    <ClInclude Include="_carsten\oMenu_Main.h" />
+    <ClInclude Include="_carsten\oMenu_Status.h" />
+    <ClInclude Include="_carsten\ooCarsten.h" />
+    <ClInclude Include="_carsten\oSpell.h" />
+    <ClInclude Include="_carsten\oVisFx.h" />
+    <ClInclude Include="_carsten\oVisFx_Edit.h" />
+    <ClInclude Include="_carsten\oVisFx_MultiTarget.h" />
+    <ClInclude Include="_kurt\oMusicZone.h" />
+    <ClInclude Include="_manuel\oCollisionObjectMiscChar.h" />
+    <ClInclude Include="_roman\oDamage.h" />
+    <ClInclude Include="_roman\oDocumentManager.h" />
+    <ClInclude Include="_roman\oIncDialogs.h" />
+    <ClInclude Include="_roman\oIncViews.h" />
+    <ClInclude Include="_roman\oInformationManager.h" />
+    <ClInclude Include="_roman\oLogManager.h" />
+    <ClInclude Include="_roman\oNpc_Damage.h" />
+    <ClInclude Include="_roman\oNpc_Fight.h" />
+    <ClInclude Include="_roman\oNpc_Move.h" />
+    <ClInclude Include="_roman\oViewDialogInventory.h" />
+    <ClInclude Include="_roman\oViewDialogItem.h" />
+    <ClInclude Include="_roman\oViewDialogItemContainer.h" />
+    <ClInclude Include="_roman\oViewDialogStealContainer.h" />
+    <ClInclude Include="_roman\oViewDialogTrade.h" />
+    <ClInclude Include="_roman\oViewDocument.h" />
+    <ClInclude Include="_roman\oViewDocumentMap.h" />
+    <ClInclude Include="_ulf\oAiHuman.h" />
+    <ClInclude Include="_ulf\oAiShoot.h" />
+    <ClInclude Include="_ulf\oAniCtrl.h" />
+    <ClInclude Include="_ulf\oBarrier.h" />
+    <ClInclude Include="_ulf\oDialog.h" />
+    <ClInclude Include="_ulf\oDoc.h" />
+    <ClInclude Include="_ulf\oFocus.h" />
+    <ClInclude Include="_ulf\oGame.h" />
+    <ClInclude Include="_ulf\oGuilds.h" />
+    <ClInclude Include="_ulf\oHelp.h" />
+    <ClInclude Include="_ulf\oInfo.h" />
+    <ClInclude Include="_ulf\oInventory.h" />
+    <ClInclude Include="_ulf\oItem.h" />
+    <ClInclude Include="_ulf\oItemReact.h" />
+    <ClInclude Include="_ulf\oMission.h" />
+    <ClInclude Include="_ulf\oMobInter.h" />
+    <ClInclude Include="_ulf\oNews.h" />
+    <ClInclude Include="_ulf\oNpc.h" />
+    <ClInclude Include="_ulf\oNpcMessages.h" />
+    <ClInclude Include="_ulf\oNpcStates.h" />
+    <ClInclude Include="_ulf\oObjFactory.h" />
+    <ClInclude Include="_ulf\ooUlfi.h" />
+    <ClInclude Include="_ulf\oParticleControl.h" />
+    <ClInclude Include="_ulf\oPortals.h" />
+    <ClInclude Include="_ulf\oRoutine.h" />
+    <ClInclude Include="_ulf\oSpawn.h" />
+    <ClInclude Include="_ulf\oSvm.h" />
+    <ClInclude Include="_ulf\oText.h" />
+    <ClInclude Include="_ulf\oVob.h" />
+    <ClInclude Include="_ulf\oWaynet.h" />
+    <ClInclude Include="_ulf\oWorld.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\libraries\DirectX\inc\D3dxMath.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\libraries\Bink\lib\BinkW32.lib" />
+    <Library Include="..\..\libraries\BugSlayerUtil\lib\BugSlayerUtil.lib" />
+    <Library Include="..\..\libraries\BugSlayerUtil\lib\ImageHlp.Lib" />
+    <Library Include="..\..\libraries\DirectX\lib\D3dx.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\DDraw.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\DInput.lib" />
+    <Library Include="..\..\libraries\DirectX\lib\DxGuid.lib" />
+    <Library Include="..\..\libraries\MallocWin32Debug\lib\MallocWin32Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\libraries\Miles\lib\Mss32.lib" />
+    <Library Include="..\..\libraries\S3tc\lib\S3tc.lib" />
+    <Library Include="..\..\libraries\SmartHeap\lib\ShDW32Mt.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\ZenGin\res\Gothic2.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\ZenGin\res\Gothic2.ico" />
+    <Image Include="..\ZenGin\res\Splash.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\ZenGin\res\zRes.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\Users\User\Desktop\g2addon\release\ZenGin\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Goldmaster|Win32'">\Users\User\Desktop\g2addon\release\ZenGin\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\Users\User\Desktop\g2addon\release\ZenGin\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

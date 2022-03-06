@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gothic2", "Gothic\Gothic2.vcxproj", "{21CE32F5-DC84-40A0-B189-8954790AF533}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spacer2", "Spacer\Spacer2.vcxproj", "{F8516463-F982-43CC-8DAD-FC129D2B29F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Goldmaster|x86 = Goldmaster|x86
+		Release|x86 = Release|x86
+		Template|x86 = Template|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Debug|x86.ActiveCfg = Debug|Win32
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Debug|x86.Build.0 = Debug|Win32
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Goldmaster|x86.ActiveCfg = Goldmaster|Win32
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Goldmaster|x86.Build.0 = Goldmaster|Win32
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Release|x86.ActiveCfg = Release|Win32
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Release|x86.Build.0 = Release|Win32
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Template|x86.ActiveCfg = Release|Win32
+		{21CE32F5-DC84-40A0-B189-8954790AF533}.Template|x86.Build.0 = Release|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Debug|x86.ActiveCfg = Debug|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Debug|x86.Build.0 = Debug|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Goldmaster|x86.ActiveCfg = Goldmaster|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Goldmaster|x86.Build.0 = Goldmaster|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Release|x86.ActiveCfg = Release|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Release|x86.Build.0 = Release|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Template|x86.ActiveCfg = Template|Win32
+		{F8516463-F982-43CC-8DAD-FC129D2B29F2}.Template|x86.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD1E0106-20AF-4D8C-B44A-96C713A9AB27}
+	EndGlobalSection
+EndGlobal
